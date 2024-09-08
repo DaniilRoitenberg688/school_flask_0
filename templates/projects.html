@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="stylesheet" type="text/css" href="/static/style/projects_style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-info">
+            <ul class="header-list">
+            <li><a href="/" class="about-me">обо мне</a></li>
+            <li><a href="/projects/0">проекты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="move-buttons">
+            <a href="/projects/{{ left_number }}" class="button"><</a>
+            <a href="/projects/{{ right_number }}" class="button">></a>
+        </div>
+
+
+        <div class="project-info">
+            <h1>{{ header }}</h1>
+            <p class="project-text"> {{ text }}</p>
+            <img src="/static/images/{{ number }}.png" class="project-image">
+        </div>
+
+    </main>
+
+
+</body>
+</html>
